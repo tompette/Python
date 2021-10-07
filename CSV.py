@@ -6,7 +6,7 @@ import numpy as np
 with open('new_csv_data_all.csv', 'w') as f:
     pass
 
-path = "C:\\Users\\misia\\Desktop\\mgr\\data"
+path = "" #add your path
 photos = os.listdir(path)
 row = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
@@ -14,7 +14,7 @@ for foto in photos:
     row[0] = foto[5:7]
     row[1] = foto[8:10]
     row[2] = foto[11:15]
-    img = cv2.imread("C:\\Users\\misia\\Desktop\\mgr\\data\\"+foto) #obecne zdjecie
+    img = cv2.imread(""+foto) #add your path
 
     # --------2. PRZYCINANIE ZDJECIA--------------------------------------------
     #-----------PIERWSZA ROŚLINA---------------
